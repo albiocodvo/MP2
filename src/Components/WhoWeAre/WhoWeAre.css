@@ -1,0 +1,50 @@
+.who-we-are-section {
+  text-align: center;
+  padding-top: 100px;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+}
+
+.who-we-are-section.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.who-we-are-section h3 {
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.who-we-are-section .fst-italic {
+  color: color-mix(in srgb, var(--default-color), var(--contrast-color) 50%);
+}
+
+.who-we-are-section .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.who-we-are-section .content ul li {
+  padding: 0 0 10px 30px;
+  position: relative;
+}
+
+.who-we-are-section .content ul i {
+  position: absolute;
+  font-size: 20px;
+  left: 0;
+  top: -3px;
+  color: var(--accent-color);
+}
+
+.who-we-are-section .content p:last-child {
+  margin-bottom: 0;
+}
+
+.who-we-are-section .pulsating-play-btn {
+  position: absolute;
+  left: calc(50% - 47px);
+  top: calc(50% - 47px);
+}

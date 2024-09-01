@@ -1,0 +1,20 @@
+body {
+  font-family: 'Poppins';
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}

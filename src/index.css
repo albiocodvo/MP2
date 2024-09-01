@@ -1,0 +1,23 @@
+body {
+  font-family: 'Poppins';
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode .navbar {
+  background-color: #333;
+}
+
+body.dark-mode .nav-link, 
+body.dark-mode .navbar-brand, 
+body.dark-mode .dropdown-item {
+  color: #ffffff;
+}
+
+body.dark-mode .btn-outline-success {
+  border-color: #ffffff;
+  color: #ffffff;
+}

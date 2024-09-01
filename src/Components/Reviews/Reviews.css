@@ -1,0 +1,14 @@
+#blog-section {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  
+  #blog-section.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  Container h2 {
+    margin-bottom: 50px;
+  }

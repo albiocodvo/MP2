@@ -1,0 +1,18 @@
+.topbar {
+    background-color: #87CEEB;
+    color: #fff;
+    padding: 5px 0;
+    font-family: 'Poppins';
+  }
+  
+  .topbar .contact-info a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+  }
+  
+  .topbar .social-links a {
+    color: #fff;
+    margin-left: 15px;
+  }
+  

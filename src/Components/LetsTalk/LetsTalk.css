@@ -1,0 +1,20 @@
+.lets-talk-section {
+    padding-top: 200px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity .5s ease, transform .5s ease;
+  }
+  
+  .lets-talk-section.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  #lets-talk {
+    margin-top: 30px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
