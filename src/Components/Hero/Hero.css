@@ -5,6 +5,16 @@
     background: #4682B4;
     background-size: cover;
     background-position: center;
+    
+    transform: translateY(100px);
+    opacity: 0;
+    transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+.hero-section.animate-up {
+    
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .hero-section .text-start {

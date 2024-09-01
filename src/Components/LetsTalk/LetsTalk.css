@@ -1,20 +1,46 @@
 .lets-talk-section {
-    padding-top: 200px;
-    text-align: center;
-    opacity: 0;
-    transform: translateY(100px);
-    transition: opacity .5s ease, transform .5s ease;
-  }
-  
-  .lets-talk-section.show {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  #lets-talk {
-    margin-top: 30px;
-    background-color: #f8f9fa;
-    padding: 20px;
-    border-radius: 8px;
-  }
-  
+  padding-top: 100px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.lets-talk-section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.form-container {
+  background-color: #f0f4f8;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.form-row .form-group:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.form-control {
+  border-radius: 4px;
+}
+
+.react-datepicker-wrapper,
+.react-datepicker__input-container {
+  width: 100%;
+}

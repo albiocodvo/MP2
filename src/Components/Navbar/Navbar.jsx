@@ -45,7 +45,7 @@ const MyNavbar = () => {
                   <li><RouterLink className="dropdown-item" to="/what-we-offer#applicants">For Applicants</RouterLink></li>
                 </ul>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <ScrollLink
                   className="nav-link"
                   to="blog-section"
@@ -54,7 +54,7 @@ const MyNavbar = () => {
                 >
                   Blog
                 </ScrollLink>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <ScrollLink
                   className="nav-link"
