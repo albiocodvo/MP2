@@ -16,7 +16,7 @@ const WhoWeAre = () => {
     };
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Check visibility on mount
+    handleScroll();
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -33,7 +33,7 @@ const WhoWeAre = () => {
         <div className="row gy-4">
           <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <h3>Empowering You</h3>
-            <img src="../src/assets/bg1.jpg" className="img-fluid rounded-4 mb-4" alt="Job Search Platform" />
+            <img src="../public/bg1.jpg" className="img-fluid rounded-4 mb-4" alt="Job Search Platform" />
             <p>
               We know job hunting and hiring can be tough. That's why we built a platform with tools to make it a breeze—for both seekers and employers.
             </p>
@@ -55,7 +55,7 @@ const WhoWeAre = () => {
                 We're all about using tech to make the job market work better for you. And we're always improving, thanks to your feedback.
               </p>
               <div className="position-relative mt-4">
-                <img src="../src/assets/bg2.jpg" className="img-fluid rounded-4" alt="Platform Overview" />
+                <img src="../public/bg2.jpg" className="img-fluid rounded-4" alt="Platform Overview" />
               </div>
             </div>
           </div>
