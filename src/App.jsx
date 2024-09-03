@@ -24,7 +24,7 @@ function App() {
             <Footer />
           </>
         } />
-        <Route path="/what-we-offer" element={<ForApplicants />} />
+        {/* <Route path="/what-we-offer" element={<ForApplicants />} /> */}
         <Route path="/what-we-offer/employers" element={<ForEmployers />} />
         <Route path="/what-we-offer/applicants" element={<ForApplicants />} />
       </Routes>
