@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import '../LetsTalk/LetsTalk.css';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
@@ -6,29 +6,9 @@ import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 
 const LetsTalk = () => {
-
-  useEffect(() => {
-    const section = document.querySelector('.lets-talk-section');
-
-    const revealSection = () => {
-      const triggerBottom = window.innerHeight * 0.8;
-      const sectionTop = section.getBoundingClientRect().top;
-
-      if (sectionTop < triggerBottom) {
-        section.classList.add('show');
-      }
-    };
-
-    window.addEventListener('scroll', revealSection);
-
-    revealSection();
-
-    return () => window.removeEventListener('scroll', revealSection);
-  }, []);
-
   return (
-    <div id="lets-talk" className="lets-talk-section slide-up">
-      <h2 className="slide-up">Let's Talk!</h2>
+    <div id="lets-talk" className="lets-talk-section">
+      <h2>Let's Talk!</h2>
       <div className="form-container">
         <Form>
           <Form.Group className="mb-3" controlId="formEmail">
