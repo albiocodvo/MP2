@@ -1,6 +1,7 @@
 import React from 'react';
 import '../Footer/Footer.css';
 import { useNavigate } from 'react-router-dom';
+import logoImage from '../../assets/tvac-logo-1.png';
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -40,7 +41,7 @@ const Footer = () => {
         </div>
         <div className="footer-info">
           <p>Copyright Series of 2024 - Christian & Arnel</p>
-          <img src='../../src/assets/tvac-logo-1.png' alt="Footer Logo" className="footer-logo-img" />
+          <img src={logoImage} alt="Footer Logo" className="footer-logo-img" />
         </div>
       </div>
     </footer>

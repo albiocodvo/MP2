@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-scroll';
 import '../Hero/Hero.css';
+import jumbotronImage from '../../assets/people.png';
 
 const Hero = () => {
   const [hasLoaded, setHasLoaded] = useState(false);
@@ -26,7 +27,7 @@ const Hero = () => {
           </Link>
         </div>
         <div className="col-6 text-end">
-          <img src="../../src/assets/people.png" alt="Hero Image" className="hero-image" />
+          <img src={jumbotronImage} alt="Hero Image" className="hero-image" />
         </div>
       </div>
     </div>
