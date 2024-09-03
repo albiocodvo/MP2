@@ -4,7 +4,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 
 const TopBar = () => {
   return (
-    <div className="topbar d-flex align-items-center justify-content-center justify-content-md-between">
+    <div id="topbar" className="topbar d-flex align-items-center justify-content-center justify-content-md-between">
       <div className="container d-flex align-items-center">
         <div className="contact-info d-flex align-items-center">
           <i className="bi bi-envelope d-flex align-items-center">

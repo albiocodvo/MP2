@@ -1,30 +1,40 @@
 import React from 'react';
+import { useNavigate, Link } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
 import './Navbar.css';
 import TopBar from '../TopBar/TopBar';
-import { Link as ScrollLink } from 'react-scroll';
-import { Link as RouterLink } from 'react-router-dom';
 
 const MyNavbar = () => {
+  const navigate = useNavigate();
+
+  const handleScrollToSection = () => {
+    navigate('/');
+    setTimeout(() => {
+      const element = document.getElementById('lets-talk');
+      if (element) {
+        window.scrollTo({
+          top: element.offsetTop,
+          behavior: 'smooth',
+        });
+      }
+    }, 100);
+  };
+
   return (
     <>
       <TopBar />
-      <nav className="navbar navbar-expand-lg navbar-light">
+      <nav id="mynavbar" className="navbar navbar-expand-lg navbar-light">
         <div className="container">
-          <RouterLink className="navbar-brand" to="/">The Virtual Aid Co.</RouterLink>
+          <Link className="navbar-brand" to="/">The Virtual Aid Co.</Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <ScrollLink
-                  className="nav-link"
-                  to="hero-section"
-                  smooth={true}
-                  duration={300}
-                >
+                <Link className="nav-link" to="/">
                   Home
-                </ScrollLink>
+                </Link>
               </li>
               <li className="nav-item">
                 <ScrollLink
@@ -37,33 +47,18 @@ const MyNavbar = () => {
                 </ScrollLink>
               </li>
               <li className="nav-item dropdown">
-                <RouterLink className="nav-link dropdown-toggle" to="/what-we-offer" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <Link className="nav-link dropdown-toggle" to="/what-we-offer" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
                   What We Offer
-                </RouterLink>
+                </Link>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><RouterLink className="dropdown-item" to="/what-we-offer#employers">For Employers</RouterLink></li>
-                  <li><RouterLink className="dropdown-item" to="/what-we-offer#applicants">For Applicants</RouterLink></li>
+                  <li><Link className="dropdown-item" to="/what-we-offer/employers">For Employers</Link></li>
+                  <li><Link className="dropdown-item" to="/what-we-offer/applicants">For Applicants</Link></li>
                 </ul>
               </li>
-              {/* <li className="nav-item">
-                <ScrollLink
-                  className="nav-link"
-                  to="blog-section"
-                  smooth={true}
-                  duration={500}
-                >
-                  Blog
-                </ScrollLink>
-              </li> */}
               <li className="nav-item">
-                <ScrollLink
-                  className="nav-link"
-                  to="lets-talk"
-                  smooth={true}
-                  duration={300}
-                >
+                <button className="nav-link btn btn-link" onClick={handleScrollToSection}>
                   Let's Talk!
-                </ScrollLink>
+                </button>
               </li>
             </ul>
           </div>

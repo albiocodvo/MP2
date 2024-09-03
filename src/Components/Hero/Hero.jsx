@@ -6,7 +6,6 @@ const Hero = () => {
   const [hasLoaded, setHasLoaded] = useState(false);
 
   useEffect(() => {
-
     setHasLoaded(true);
   }, []);
 
@@ -17,12 +16,13 @@ const Hero = () => {
           <h1>Welcome to The Virtual Aid Co.</h1>
           <p>Your gateway to the best opportunities</p>
           <Link
-            className="nav-link"
-            to="who-we-are"
+            className="btn"
+            to="blog-section"
             smooth={true}
-            duration={300}
+            duration={400}
+            offset={-200}
           >
-            <button className="btn">Get Started</button>
+            Get to Know Us More..
           </Link>
         </div>
         <div className="col-6 text-end">

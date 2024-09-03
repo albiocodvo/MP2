@@ -9,7 +9,6 @@
   transform: translateY(0);
 }
 
-
 .carousel-item {
   display: flex;
   align-items: center;
@@ -49,4 +48,13 @@
 
 .Container h2 {
   margin-bottom: 50px;
+}
+
+
+.carousel-indicators [data-bs-target] {
+  background-color: #000 !important;
+}
+
+.carousel-indicators .active {
+  background-color: #000 !important;
 }

@@ -27,7 +27,7 @@ const LetsTalk = () => {
   }, []);
 
   return (
-    <div className="lets-talk-section slide-up">
+    <div id="lets-talk" className="lets-talk-section slide-up">
       <h2 className="slide-up">Let's Talk!</h2>
       <div className="form-container">
         <Form>

@@ -1,5 +1,5 @@
 .footer {
-    background-color: #333;
+    background-color: #B2BEB5;
     color: #fff;
     padding: 2rem 0;
     display: flex;
@@ -36,7 +36,7 @@
   }
   
   .footer-links a {
-    color: #96DED1;
+    color: #000;
     text-decoration: none;
   }
   
@@ -55,7 +55,7 @@
   
   .footer-logo-img {
     margin-top: 1rem;
-    max-width: 150px; /* Adjust based on your logo size */
+    max-width: 150px;
     height: auto;
   }
   
